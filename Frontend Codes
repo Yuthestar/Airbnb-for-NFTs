@@ -1,1 +1,3363 @@
 
+##FRONT END
+##Index.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NFT Rentals - Airbnb for NFTs</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- Hero Section -->
+
+ 
+
+ 
+
+  <section class="hero">
+
+     
+
+    <h1>Airbnb for NFTs</h1>
+
+    <p>Rent NFTs securely and temporarily — games, art, events & more.</p>
+
+    <div class="buttons">
+
+      <a href="browse.html" class="btn">Browse NFTs</a>
+
+      <a href="list.html" class="btn secondary">List Your NFT</a>
+
+    </div>
+
+  </section>
+
+ 
+
+  <!-- Features Section -->
+
+  <section class="features">
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="feature-list">
+
+      <div class="feature">
+
+        <h3>🔒 Secure</h3>
+
+        <p>Smart contracts enforce payment and NFT return.</p>
+
+      </div>
+
+      <div class="feature">
+
+        <h3>⚡ Fast</h3>
+
+        <p>Instant access to NFTs for games, events, and metaverse.</p>
+
+      </div>
+
+      <div class="feature">
+
+        <h3>🌍 Decentralized</h3>
+
+        <p>Transparent and fully on-chain rental system.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+ 
+
+##Browse.html
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Browse NFTs - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html" class="active">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- Browse Section -->
+
+  <section class="browse">
+
+    <h1>Available NFTs for Rent</h1>
+
+    <p>Explore NFTs across games, art, and events.</p>
+
+ 
+
+    <!-- Search and Filter -->
+
+    <div class="search-filter">
+
+      <input type="text" id="searchInput" placeholder="Search NFTs..." />
+
+      <select id="filterSelect">
+
+        <option value="all">All Categories</option>
+
+        <option value="games">Games</option>
+
+        <option value="art">Art</option>
+
+        <option value="events">Events</option>
+
+      </select>
+
+    </div>
+
+ 
+
+    <!-- NFT Grid -->
+
+    <div class="nft-grid" id="nftGrid">
+
+     
+
+      <div class="card">
+
+        <img src=" https://user-gen-media-assets.s3.amazonaws.com/gemini_images/d4ca0930-b447-4a1a-9e56-30eb25a29611.png" class="picture_browser"  />
+
+        <h3>Epic Gamer Skin</h3>
+
+        <p>0.05 ETH / day</p>
+
+        <a href="detail.html" class="btn">View Details</a>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/894ac179-fd9a-4665-8f84-5a3fa086d9e0.png"  class="picture_browser"   />
+
+        <h3>Rare Digital Artwork</h3>
+
+        <p>0.1 ETH / day</p>
+
+        <a href="detail2.html" class="btn">View Details</a>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/3b697a01-7fbf-4265-9ed6-0020248172d3.png"  class="picture_browser" />
+
+        <h3>Concert Weekend Pass</h3>
+
+        <p>0.08 ETH / day</p>
+
+        <a href="detail3.html" class="btn">View Details</a>
+
+      </div>
+
+      <div class="container">
+
+  <div class="row g-4" id="nftContainer">
+
+    <!-- NFTs will be loaded here dynamically -->
+
+  </div>
+
+</div>
+
+ 
+
+    </div>
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+ 
+
+ <script src="script.js"></script>
+
+ 
+
+</body>
+
+</html>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+##Browse.js
+document.addEventListener("DOMContentLoaded", () => {
+
+  const container = document.getElementById("nftContainer");
+
+  const searchInput = document.getElementById("searchInput");
+
+  const filterSelect = document.getElementById("filterSelect");
+
+ 
+
+  // Load NFTs from storage
+
+  let saved = JSON.parse(localStorage.getItem("nfts")) || [];
+
+ 
+
+  // ✅ Render saved NFTs
+
+  saved.slice().reverse().forEach(nft => {
+
+    const wrapper = document.createElement("div");
+
+    wrapper.className = "card-wrapper";
+
+    wrapper.innerHTML = `
+
+      <div class="card-inner" data-category="${nft.category || 'other'}" data-id="${nft.id}">
+
+        <img src="${nft.img}" alt="${nft.title}"
+
+             onerror="this.src='https://via.placeholder.com/400x300?text=No+Image'">
+
+        <h3>${nft.title}</h3>
+
+        <p class="desc">${nft.desc}</p>
+
+        <p class="price">${nft.price} ETH / day</p>
+
+        <div class="actions">
+
+          <button class="btn-primary btn-rent" data-id="${nft.id}">Rent Now</button>
+
+        </div>
+
+      </div>`;
+
+    container.appendChild(wrapper);
+
+  });
+
+ 
+
+  // ✅ Search + Filter
+
+  function filterCards() {
+
+    const q = (searchInput.value || "").toLowerCase();
+
+    const cat = filterSelect.value;
+
+ 
+
+    document.querySelectorAll("#nftContainer .card-inner").forEach(card => {
+
+      const title = (card.querySelector("h3")?.textContent || "").toLowerCase();
+
+      const desc = (card.querySelector(".desc")?.textContent || "").toLowerCase();
+
+      const category = card.dataset.category || "other";
+
+ 
+
+      const matchesQ = title.includes(q) || desc.includes(q);
+
+      const matchesCat = cat === "all" || category === cat;
+
+ 
+
+      card.parentElement.style.display = (matchesQ && matchesCat) ? "block" : "none";
+
+    });
+
+  }
+
+ 
+
+  searchInput.addEventListener("input", filterCards);
+
+  filterSelect.addEventListener("change", filterCards);
+
+ 
+
+  // ✅ Rent Now → Save to "rentals"
+
+  container.addEventListener("click", (e) => {
+
+    const rentBtn = e.target.closest(".btn-rent");
+
+    if (!rentBtn) return;
+
+ 
+
+    const card = rentBtn.closest(".card-inner");
+
+    const nftId = card.dataset.id || "static-" + Date.now();
+
+    const nftTitle = card.querySelector("h3").textContent;
+
+    const nftImg = card.querySelector("img").src;
+
+    const nftDesc = card.querySelector(".desc").textContent;
+
+    const nftPrice = card.querySelector(".price").textContent;
+
+    const nftCat = card.dataset.category;
+
+ 
+
+    // Create rental object
+
+    const rental = {
+
+      id: nftId,
+
+      title: nftTitle,
+
+      img: nftImg,
+
+      desc: nftDesc,
+
+      price: nftPrice,
+
+      category: nftCat,
+
+      rentedAt: new Date().toISOString()
+
+    };
+
+ 
+
+    // Save to rentals
+
+    let rentals = JSON.parse(localStorage.getItem("rentals")) || [];
+
+    rentals.push(rental);
+
+    localStorage.setItem("rentals", JSON.stringify(rentals));
+
+ 
+
+    alert(`✅ You rented: ${nftTitle}\nIt will now appear in your Dashboard → My Rentals`);
+
+  });
+
+});
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+##Detail.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NFT Detail - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- NFT Detail Section -->
+
+  <section class="detail">
+
+    <div class="detail-card">
+
+     
+
+ 
+
+      <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/d4ca0930-b447-4a1a-9e56-30eb25a29611.png"  class="detail-img" />
+
+      <div class="detail-info">
+
+        <h1>Epic Gamer Skin</h1>
+
+        <p class="price">0.05 ETH / day</p>
+
+        <p>
+
+          This is a unique in-game skin available for short-term rentals. Perfect for tournaments or showing off your style without buying it forever.
+
+        </p>
+
+ 
+
+        <h3>Owner</h3>
+
+        <p>Wallet: 0x1234...abcd</p>
+
+ 
+
+        <h3>Rental Options</h3>
+
+        <label for="duration">Select Duration:</label>
+
+        <select id="duration">
+
+          <option value="1">1 Day</option>
+
+          <option value="7">1 Week</option>
+
+          <option value="30">1 Month</option>
+
+        </select>
+
+ 
+
+        <button class="btn rent-btn return_button" onclick="rentNFT()">Rent Now</button>
+
+      </div>
+
+      <!-- Back Button -->
+
+      <div class="back-btn">
+
+        <a href="browse.html" class="btn secondary">← Back to Browse</a>
+
+      </div>
+
+    </div>
+
+   
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+##Detail2.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NFT Detail - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- NFT Detail Section -->
+
+  <section class="detail">
+
+    <div class="detail-card">
+
+     
+
+ 
+
+      <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/894ac179-fd9a-4665-8f84-5a3fa086d9e0.png" class="detail-img" />
+
+      <div class="detail-info">
+
+        <h1>Rare Digital Artwork </h1>
+
+        <p class="price">0.08 ETH / day</p>
+
+        <p>
+
+          This rare digital art piece is part of a limited collection. Perfect for collectors who want to temporarily showcase it.
+
+        </p>
+
+ 
+
+        <h3>Owner</h3>
+
+        <p>@Artist 123</p>
+
+ 
+
+        <h3>Rental Options</h3>
+
+        <label for="duration">Select Duration:</label>
+
+        <select id="duration">
+
+          <option value="1">1 Day</option>
+
+          <option value="7">1 Week</option>
+
+          <option value="30">1 Month</option>
+
+        </select>
+
+ 
+
+        <button class="btn rent-btn return_button" onclick="rentNFT()">Rent Now</button>
+
+      </div>
+
+      <!-- Back Button -->
+
+      <div class="back-btn">
+
+        <a href="browse.html" class="btn secondary">← Back to Browse</a>
+
+      </div>
+
+    </div>
+
+   
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+##Detail3.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NFT Detail - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- NFT Detail Section -->
+
+  <section class="detail">
+
+    <div class="detail-card">
+
+     
+
+ 
+
+      <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/3b697a01-7fbf-4265-9ed6-0020248172d3.png" class="detail-img" />
+
+      <div class="detail-info">
+
+        <h1>Exclusive Event Pass </h1>
+
+        <p class="price">0.01 ETH / day</p>
+
+        <p>
+
+         This NFT grants temporary access to premium events and shows. Rent it and enjoy exclusive experiences.
+
+        </p>
+
+ 
+
+        <h3>Owner</h3>
+
+        <p>@Organizer007</p>
+
+ 
+
+        <h3>Rental Options</h3>
+
+        <label for="duration">Select Duration:</label>
+
+        <select id="duration">
+
+          <option value="1">1 Day</option>
+
+          <option value="7">1 Week</option>
+
+          <option value="30">1 Month</option>
+
+        </select>
+
+ 
+
+        <button class="btn rent-btn return_button" onclick="rentNFT()">Rent Now</button>
+
+      </div>
+
+      <!-- Back Button -->
+
+      <div class="back-btn">
+
+        <a href="browse.html" class="btn secondary">← Back to Browse</a>
+
+      </div>
+
+    </div>
+
+   
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+##List.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>List Your NFT - NFT Rentals</title>
+
+ 
+
+  <!-- Global CSS -->
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+ 
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">
+
+      <img src="assets/logo.png" alt="logo" style="height:44px" onerror="this.style.display='none'"/>
+
+      <span class="logo-text">NFT Rentals</span>
+
+    </div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html" class="active">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- Page Heading -->
+
+  <section class="section-title">
+
+    <h1 style="color: #00bfff;margin: 20px;font-size: 35px;">List Your NFT</h1>
+
+    <p class="text-muted" style="color: aqua;font-size: 25px;margin: 20px;">Add your NFT for rental </p>
+
+  </section>
+
+ 
+
+  <!-- Form Section -->
+
+  <div class="container">
+
+    <div class="list-form-container">
+
+      <form id="nftForm" class="mb-4">
+
+        <div class="form-row">
+
+          <div>
+
+            <label for="nftTitle">NFT Title</label>
+
+            <input id="nftTitle" type="text" required />
+
+          </div>
+
+          <div>
+
+            <label for="nftPrice">Rental Price (ETH)</label>
+
+            <input id="nftPrice" type="number" step="0.0001" required />
+
+          </div>
+
+ 
+
+          <div class="full">
+
+            <label for="nftImage">NFT Image URL</label>
+
+            <input id="nftImage" type="text" placeholder="https://..." required />
+
+          </div>
+
+ 
+
+          <div class="full">
+
+            <label for="nftDesc">Description</label>
+
+            <textarea id="nftDesc" rows="3" required></textarea>
+
+          </div>
+
+ 
+
+          <div>
+
+            <label for="nftCategory">Category</label>
+
+            <select id="nftCategory">
+
+              <option value="games">Games</option>
+
+              <option value="art">Art</option>
+
+              <option value="events">Events</option>
+
+              <option value="other">Other</option>
+
+            </select>
+
+          </div>
+
+ 
+
+          <div style="display:flex;align-items:end">
+
+            <button type="submit">Add NFT</button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- Preview Section -->
+
+  <div class="container">
+
+    <h2 style="color:#00bfff;margin-bottom:.8rem;margin: 30px;font-size: 35px;">Your NFT will appear below:</h2>
+
+    <div class="nft-grid" id="newNftContainer">
+
+      <!-- NFTs you add will show here instantly -->
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- ✅ JS directly added here -->
+
+  <script >
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("nftForm");
+
+    const container = document.getElementById("newNftContainer");
+
+ 
+
+    // Render NFT card below form
+
+    function renderCard(nft, parent) {
+
+      const wrapper = document.createElement("div");
+
+      wrapper.className = "card-wrapper";
+
+      wrapper.innerHTML = `
+
+        <div class="card-inner" data-id="${nft.id}">
+
+          <img src="${nft.img}" alt="${nft.title}"
+
+               onerror="this.src='https://via.placeholder.com/400x300?text=No+Image'">
+
+          <h3>${nft.title}</h3>
+
+          <p class="desc">${nft.desc}</p>
+
+          <p class="price">${nft.price} ETH / day</p>
+
+          <div class="actions">
+
+           
+
+            <button class="btn-outline btn-delete" data-id="${nft.id}">Delete</button>
+
+          </div>
+
+        </div>
+
+      `;
+
+      parent.prepend(wrapper);
+
+    }
+
+ 
+
+    // Load existing NFTs (only those you own)
+
+    let saved = JSON.parse(localStorage.getItem("nfts")) || [];
+
+    saved.forEach(nft => {
+
+      if (nft.owner === "You") renderCard(nft, container);
+
+    });
+
+ 
+
+    // If editing, pre-fill form
+
+    const editData = JSON.parse(localStorage.getItem("nft-edit"));
+
+    if (editData) {
+
+      document.getElementById("nftTitle").value = editData.title;
+
+      document.getElementById("nftPrice").value = editData.price;
+
+      document.getElementById("nftImage").value = editData.img;
+
+      document.getElementById("nftDesc").value = editData.desc;
+
+      document.getElementById("nftCategory").value = editData.category;
+
+      localStorage.removeItem("nft-edit");
+
+      saved = saved.filter(x => x.id !== editData.id);
+
+      localStorage.setItem("nfts", JSON.stringify(saved));
+
+    }
+
+ 
+
+    // Handle form submit
+
+    form.addEventListener("submit", (e) => {
+
+      e.preventDefault();
+
+ 
+
+      const title = document.getElementById("nftTitle").value.trim();
+
+      const price = document.getElementById("nftPrice").value.trim();
+
+      const img = document.getElementById("nftImage").value.trim();
+
+      const desc = document.getElementById("nftDesc").value.trim();
+
+      const category = document.getElementById("nftCategory").value;
+
+ 
+
+      if (!title || !price || !img || !desc) {
+
+        alert("⚠️ Please fill all fields.");
+
+        return;
+
+      }
+
+ 
+
+      const nftObj = {
+
+        id: Date.now().toString(),
+
+        title,
+
+        price,
+
+        img,
+
+        desc,
+
+        category,
+
+        owner: "You"
+
+      };
+
+ 
+
+      saved.push(nftObj);
+
+      localStorage.setItem("nfts", JSON.stringify(saved));
+
+ 
+
+      renderCard(nftObj, container);
+
+ 
+
+      form.reset();
+
+ 
+
+      alert("✅ NFT listed successfully! It is now visible in Browse and Dashboard.");
+
+    });
+
+ 
+
+    // Edit/Delete
+
+    container.addEventListener("click", (e) => {
+
+      const id = e.target.dataset.id;
+
+ 
+
+      if (e.target.classList.contains("btn-delete")) {
+
+        if (!confirm("Delete this NFT?")) return;
+
+        saved = saved.filter(x => x.id !== id);
+
+        localStorage.setItem("nfts", JSON.stringify(saved));
+
+        e.target.closest(".card-wrapper").remove();
+
+        return;
+
+      }
+
+ 
+
+      if (e.target.classList.contains("btn-edit")) {
+
+        const nft = saved.find(x => x.id === id);
+
+        if (!nft) return;
+
+        localStorage.setItem("nft-edit", JSON.stringify(nft));
+
+        location.reload();
+
+      }
+
+    });
+
+  });
+
+  </script>
+
+</body>
+
+</html>
+
+ 
+
+##Dashboard.html
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>User Dashboard - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- Dashboard Section -->
+
+  <section class="dashboard ">
+
+    <h1>Welcome to Your Dashboard</h1>
+
+ 
+
+    <!-- My Rentals -->
+
+    <div class="dashboard-section" id="myRentals">
+
+      <h2>My Rentals</h2>
+
+      <div class="nft-grid">
+
+        <div class="card">
+
+          <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/d4ca0930-b447-4a1a-9e56-30eb25a29611.png" />
+
+          <h3>Epic Gamer Skin</h3>
+
+          <p>0.05 ETH / day</p>
+
+          <button class="btn" onclick="returnNFT()">Return NFT</button>
+
+        </div>
+
+        <div class="card">
+
+          <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/3b697a01-7fbf-4265-9ed6-0020248172d3.png"  />
+
+          <h3>Concert Weekend Pass</h3>
+
+          <p>0.08 ETH / day</p>
+
+          <button class="btn" onclick="returnNFT()">Return NFT</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+ 
+
+    <!-- My Listings -->
+
+    <div class="dashboard-section" id="myListings" >
+
+      <h2>My Listings</h2>
+
+      <div class="nft-grid">
+
+        <div class="card">
+
+          <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/3b8051a4-ed1b-45d1-ab32-923a8047064b.png"  />
+
+          <h3>Rare Digital Artwork</h3>
+
+          <p>0.1 ETH / day</p>
+
+          <button class="btn" onclick="editNFT()">Edit Listing</button>
+
+        </div>
+
+        <div class="card">
+
+           <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/41d4cda8-3d52-4418-8a28-b56ec7071146.png" />
+
+          <h3>Limited Edition Skin</h3>
+
+          <p>0.07 ETH / day</p>
+
+          <button class="btn" onclick="editNFT()">Edit Listing</button>
+
+        </div>
+
+       
+
+      </div>
+
+    </div>
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+  <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const myListings = document.getElementById("myListings");
+
+  let saved = JSON.parse(localStorage.getItem("nfts")) || [];
+
+ 
+
+  function renderCard(nft, parent) {
+
+    const wrapper = document.createElement("div");
+
+    wrapper.className = "card-wrapper";
+
+    wrapper.innerHTML = `
+
+      <div class="card-inner">
+
+        <img src="${nft.img}" alt="${nft.title}"
+
+             onerror="this.src='https://via.placeholder.com/400x300?text=No+Image'">
+
+        <h3>${nft.title}</h3>
+
+        <p class="desc">${nft.desc}</p>
+
+        <p class="price">${nft.price} ETH / day</p>
+
+      </div>
+
+    `;
+
+    parent.appendChild(wrapper);
+
+  }
+
+ 
+
+  // show only NFTs listed by you
+
+  saved.forEach(nft => {
+
+    if (nft.owner === "You") {
+
+      renderCard(nft, myListings);
+
+    }
+
+  });
+
+});
+
+</script>
+
+ 
+
+</body>
+
+</html>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+##Wallet.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Wallet - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+ 
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">
+
+      <img src="assets/logo.png" alt="logo" style="height:44px" onerror="this.style.display='none'"/>
+
+      <span class="logo-text">NFT Rentals</span>
+
+    </div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- Wallet Section -->
+
+  <section class="section-title">
+
+    <h1 style="color:#00bfff; text-align: center;font-weight: bolder; ">My Wallet</h1>
+
+    <p class="text-muted" style="color: rgb(0, 140, 255);text-align: center;">Manage your wallet connection and view details.</p>
+
+  </section>
+
+ 
+
+  <div class="container">
+
+    <div class="wallet-box">
+
+      <h2 style="color:#00bfff">Wallet Status</h2>
+
+      <p id="walletAddress">🔗 Not Connected</p>
+
+      <p id="walletBalance">💰 Balance: --</p>
+
+      <button id="connectBtn" class="btn-primary">Connect Wallet</button>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p style="text-align:center">© 2025 NFT Rentals</p>
+
+  </footer>
+
+ 
+
+  <!-- JS -->
+
+  <script>
+
+    const connectBtn = document.getElementById("connectBtn");
+
+    const walletAddress = document.getElementById("walletAddress");
+
+    const walletBalance = document.getElementById("walletBalance");
+
+ 
+
+    connectBtn.addEventListener("click", () => {
+
+      // Fake wallet details
+
+      const fakeAddress = "0x" + Math.random().toString(16).substring(2, 10) + "..." + Math.random().toString(16).substring(2, 6);
+
+      const fakeBalance = (Math.random() * 5).toFixed(3);
+
+ 
+
+      walletAddress.textContent = `🔗 Address: ${fakeAddress}`;
+
+      walletBalance.textContent = `💰 Balance: ${fakeBalance} ETH`;
+
+      connectBtn.textContent = "Connected ✅";
+
+      connectBtn.disabled = true;
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+
+ 
+
+##About.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About - NFT Rentals</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">NFT Rentals</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="browse.html">Browse NFTs</a></li>
+
+        <li><a href="list.html">List NFT</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="wallet.html" class="active">Wallet</a></li>
+
+        <li><a href="about.html" class="active">About</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!-- About Section -->
+
+  <section class="about">
+
+    <h1>About NFT Rentals</h1>
+
+    <p>
+
+      NFT Rentals is a decentralized marketplace for short-term NFT rentals. Rent digital assets for gaming, art, or events without buying them permanently.
+
+      Our platform uses smart contracts to ensure secure, transparent transactions.
+
+    </p>
+
+ 
+
+    <!-- Team Members -->
+
+    <h2 style="padding: 10px;">Meet the Team</h2>
+
+    <div class="team-grid">
+
+      <div class="team-member">
+
+       
+
+        <h3>Eneya Bala</h3>
+
+        <p>abz@gmail.com</p>
+
+         </div>
+
+      <div class="team-member">
+
+       
+
+        <h3>Chegondi Yashas Chandra</h3>
+
+        <p>abz@gmail.com</p>
+
+       
+
+      </div>
+
+      <div class="team-member">
+
+       
+
+        <h3>yuthestar</h3>
+
+        <p>abz@gmail.com</p>
+
+       </div>
+
+        <div class="team-member">
+
+       
+
+        <h3>jeffin davy manjali</h3>
+
+        <p>abz@gmail.com</p>
+
+       </div>
+
+    </div>
+
+ 
+
+    <!-- Contact Form -->
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm" class="contact-form">
+
+      <label for="name">Name:</label>
+
+      <input type="text" id="name" required />
+
+ 
+
+      <label for="email">Email:</label>
+
+      <input type="email" id="email" required />
+
+ 
+
+      <label for="message">Message:</label>
+
+      <textarea id="message" rows="4" required></textarea>
+
+ 
+
+      <button type="submit" class="btn">Send Message</button>
+
+    </form>
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+
+  </footer>
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+##Script.js
+// Example: Show a welcome message in console
+
+console.log("Welcome to NFT Rentals - Landing Page Loaded!");
+
+ 
+
+// You can add interactivity later if needed
+
+// NFT Search Filter
+
+const searchInput = document.getElementById("searchInput");
+
+const filterSelect = document.getElementById("filterSelect");
+
+const nftGrid = document.getElementById("nftGrid");
+
+ 
+
+if (searchInput && filterSelect && nftGrid) {
+
+  searchInput.addEventListener("input", filterNFTs);
+
+  filterSelect.addEventListener("change", filterNFTs);
+
+ 
+
+  function filterNFTs() {
+
+    const searchValue = searchInput.value.toLowerCase();
+
+    const filterValue = filterSelect.value;
+
+ 
+
+    Array.from(nftGrid.children).forEach((card) => {
+
+      const title = card.querySelector("h3").textContent.toLowerCase();
+
+      const matchesSearch = title.includes(searchValue);
+
+      const matchesFilter =
+
+        filterValue === "all" ||
+
+        (filterValue === "games" && title.includes("skin")) ||
+
+        (filterValue === "art" && title.includes("art")) ||
+
+        (filterValue === "events" && title.includes("pass"));
+
+ 
+
+      if (matchesSearch && matchesFilter) {
+
+        card.style.display = "block";
+
+      } else {
+
+        card.style.display = "none";
+
+      }
+
+    });
+
+  }
+
+}
+
+// NFT Rent Function
+
+function rentNFT() {
+
+  const duration = document.getElementById("duration").value;
+
+  alert(`You selected to rent this NFT for ${duration} day(s).\n(Note: Payment would be handled by smart contract in real app)`);
+
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const container = document.querySelector(".row.g-4"); // NFT grid container
+
+ 
+
+  // Load NFTs from localStorage
+
+  const savedNFTs = JSON.parse(localStorage.getItem("nfts")) || [];
+
+  savedNFTs.forEach(nft => {
+
+    const cardDiv = document.createElement("div");
+
+    cardDiv.className = "col-md-4";
+
+    cardDiv.innerHTML = `
+
+      <div class="card shadow-sm">
+
+        <img src="${nft.img}" class="card-img-top" alt="${nft.title}">
+
+        <div class="card-body">
+
+          <h5 class="card-title">${nft.title}</h5>
+
+          <p class="card-text">${nft.desc}</p>
+
+          <p class="card-text"><strong>${nft.price} ETH / day</strong></p>
+
+          <a href="#" class="btn btn-primary">Rent Now</a>
+
+        </div>
+
+      </div>
+
+    `;
+
+    container.appendChild(cardDiv);
+
+  });
+
+});
+
+// Return NFT
+
+function returnNFT() {
+
+  alert("✅ NFT returned successfully!");
+
+}
+
+ 
+
+// Edit Listing
+
+function editNFT() {
+
+  alert("✏️ NFT listing edit feature (demo only)");
+
+}
+
+// Contact Form Submit
+
+const contactForm = document.getElementById("contactForm");
+
+ 
+
+if (contactForm) {
+
+  contactForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+
+    const email = document.getElementById("email").value;
+
+    const message = document.getElementById("message").value;
+
+ 
+
+    alert(`✅ Message Sent!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+    contactForm.reset();
+
+  });
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+##Style.css
+/* Reset */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+ 
+
+body {
+
+  background-color: #0d0d0d;
+
+  color: #f0f0f0;
+
+  line-height: 1.6;
+
+}
+
+ 
+
+/* Navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background: #111;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+}
+
+.navbar .logo {
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+  color: #00bfff;
+
+}
+
+.navbar ul {
+
+  list-style: none;
+
+  display: flex;
+
+  gap: 1.5rem;
+
+}
+
+.navbar a {
+
+  text-decoration: none;
+
+  color: #f0f0f0;
+
+  transition: color 0.3s ease;
+
+}
+
+.navbar a:hover {
+
+  color: #00bfff;
+
+}
+
+ 
+
+/* Hero Section */
+
+.hero {
+
+  text-align: center;
+
+  padding: 6rem 2rem;
+
+  background: linear-gradient(to right, #1a1a1a, #222);
+
+}
+
+.hero h1 {
+
+  font-size: 3rem;
+
+  margin-bottom: 1rem;
+
+  color: #00bfff;
+
+}
+
+.hero p {
+
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+
+}
+
+.hero .buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  padding: 0.8rem 1.5rem;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  background: #00bfff;
+
+  color: #0d0d0d;
+
+  transition: background 0.3s ease;
+
+}
+
+.btn:hover {
+
+  background: #009acd;
+
+}
+
+.btn.secondary {
+
+  background: #444;
+
+  color: #fff;
+
+}
+
+.btn.secondary:hover {
+
+  background: #666;
+
+}
+
+ 
+
+/* Features */
+
+.features {
+
+  text-align: center;
+
+  padding: 4rem 2rem;
+
+}
+
+.features h2 {
+
+  margin-bottom: 2rem;
+
+  font-size: 2rem;
+
+  color: #00bfff;
+
+}
+
+.feature-list {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 2rem;
+
+  flex-wrap: wrap;
+
+}
+
+.feature {
+
+  background: #111;
+
+  padding: 1.5rem;
+
+  border-radius: 8px;
+
+  width: 250px;
+
+  text-align: center;
+
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+
+}
+
+.feature h3 {
+
+  margin-bottom: 0.5rem;
+
+  font-size: 1.2rem;
+
+}
+
+ 
+
+/* Footer */
+
+.footer {
+
+  text-align: center;
+
+  padding: 1.5rem;
+
+  background: #111;
+
+  margin-top: 3rem;
+
+  font-size: 0.9rem;
+
+}
+
+/* Logo container */
+
+.logo {
+
+  display: flex;
+
+  align-items: end;   /* vertically center image + text */
+
+  gap: 0.5rem;           /* space between image and text */
+
+}
+
+ 
+
+/* Logo image */
+
+.picture_logo {
+
+     height: 250px;
+
+  width: auto;
+
+  object-fit: contain;
+
+  background-size: cover;
+
+  border-radius: 130px;
+
+}
+
+/* Browse Page */
+
+.browse {
+
+  padding: 4rem 2rem;
+
+  text-align: center;
+
+}
+
+ 
+
+.browse h1 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 0.5rem;
+
+  color: #00bfff;
+
+}
+
+ 
+
+.browse p {
+
+  margin-bottom: 2rem;
+
+  font-size: 1.1rem;
+
+  color: #ccc;
+
+}
+
+ 
+
+.search-filter {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-bottom: 3rem;
+
+}
+
+ 
+
+.search-filter input,
+
+.search-filter select {
+
+  padding: 0.6rem;
+
+  border-radius: 5px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 1rem;
+
+}
+
+ 
+
+.nft-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 2rem;
+
+}
+
+ 
+
+.card {
+
+  background: #111;
+
+  padding: 1rem;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.2);
+
+  transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+.card img {
+
+ 
+
+  height: 250px;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+
+  margin-bottom: 1rem;
+
+}
+
+.card h3 {
+
+  margin-bottom: 0.5rem;
+
+}
+
+.card p {
+
+  margin-bottom: 1rem;
+
+  color: #00bfff;
+
+}
+
+.picture_browser{
+
+  height:200px;
+
+ background-size: cover;
+
+ object-fit: contain;
+
+ 
+
+}
+
+ 
+
+/* NFT Detail Page */
+
+.detail {
+
+  padding: 4rem 2rem;
+
+  display: flex;
+
+  justify-content: center;
+
+  background-size: cover;
+
+}
+
+ 
+
+.detail-card {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  background: #111;
+
+  padding: 2rem;
+
+  border-radius: 12px;
+
+  max-width: 900px;
+
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+
+}
+
+ 
+
+.detail-img {
+
+  flex: 1 1 300px;
+
+  border-radius: 10px;
+
+  width: 200px;
+
+  height: 300px;
+
+}
+
+ 
+
+.detail-info {
+
+  flex: 1 1 400px;
+
+}
+
+ 
+
+.detail-info h1 {
+
+  font-size: 2rem;
+
+  margin-bottom: 0.5rem;
+
+  color: #00bfff;
+
+}
+
+ 
+
+.detail-info .price {
+
+  font-size: 1.2rem;
+
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+
+  color: #00bfff;
+
+}
+
+ 
+
+.detail-info p {
+
+  margin-bottom: 1rem;
+
+  color: #ccc;
+
+}
+
+ 
+
+.detail-info h3 {
+
+  margin: 1rem 0 0.5rem;
+
+  color: #fff;
+
+}
+
+ 
+
+.detail-info select {
+
+  padding: 0.5rem;
+
+  margin: 0.5rem 0 1.5rem;
+
+  border: none;
+
+  border-radius: 5px;
+
+}
+
+.back-btn {
+
+  margin-bottom: 1rem;
+
+}
+
+ 
+
+.back-btn .btn.secondary {
+
+  background: #333;
+
+  color: #fff;
+
+  font-size: 0.9rem;
+
+  padding: 0.6rem 1rem;
+
+}
+
+ 
+
+.back-btn .btn.secondary:hover {
+
+  background: #555;
+
+}
+
+.return_button {
+
+    margin: 10px;
+
+}
+
+.delete-btn {
+
+  margin-top: 8px;
+
+  width: 100%;
+
+}
+
+/* Dashboard Page */
+
+.dashboard {
+
+  padding: 4rem 2rem;
+
+  text-align: center;
+
+}
+
+ 
+
+.dashboard h1 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 2rem;
+
+  color: #00bfff;
+
+}
+
+ 
+
+.dashboard-section {
+
+  margin-bottom: 4rem;
+
+}
+
+ 
+
+.dashboard-section h2 {
+
+  font-size: 2rem;
+
+  margin-bottom: 1.5rem;
+
+  color: #00bfff;
+
+}
+
+/* About Page */
+
+.about {
+
+  padding: 4rem 2rem;
+
+  text-align: center;
+
+}
+
+ 
+
+.about h1 {
+
+  font-size: 2.5rem;
+
+  color: #00bfff;
+
+  margin-bottom: 1rem;
+
+}
+
+ 
+
+.about p {
+
+  margin-bottom: 2rem;
+
+  color: #ccc;
+
+  max-width: 700px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+ 
+
+.team-grid {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 2rem;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 3rem;
+
+}
+
+ 
+
+.team-member {
+
+  background: #111;
+
+  padding: 1rem;
+
+  border-radius: 10px;
+
+  width: 200px;
+
+  text-align: center;
+
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.2);
+
+}
+
+ 
+
+.team-member img {
+
+  width: 100%;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  margin-bottom: 0.5rem;
+
+}
+
+ 
+
+.team-member h3 {
+
+  margin-bottom: 0.3rem;
+
+  color: #00bfff;
+
+}
+
+ 
+
+.team-member p {
+
+  color: #ccc;
+
+  font-size: 0.9rem;
+
+}
+
+ 
+
+/* Contact Form */
+
+.contact-form {
+
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  background: #111;
+
+  padding: 2rem;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.2);
+
+  text-align: left;
+
+}
+
+ 
+
+.contact-form label {
+
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  font-weight: bold;
+
+  color: #fff;
+
+}
+
+ 
+
+.contact-form input,
+
+.contact-form textarea {
+
+  width: 100%;
+
+  padding: 0.7rem;
+
+  margin-bottom: 1.5rem;
+
+  border: none;
+
+  border-radius: 5px;
+
+  font-size: 1rem;
+
+}
+
+/* ============================
+
+   LIST PAGE (list.html) STYLES
+
+   ============================ */
+
+ 
+
+/* Container around form */
+
+.list-form-container {
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 1.5rem;
+
+  background: #111;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 18px rgba(0, 191, 255, 0.08);
+
+}
+
+ 
+
+/* Form rows */
+
+.form-row {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1.2rem;
+
+  margin-bottom: 1rem;
+
+}
+
+ 
+
+.form-row .full {
+
+  grid-column: 1 / -1;
+
+}
+
+ 
+
+/* Labels */
+
+label {
+
+  display: block;
+
+  font-size: 0.92rem;
+
+  color: #bfc7cc;
+
+  margin-bottom: 0.3rem;
+
+}
+
+ 
+
+/* Inputs & textarea */
+
+input[type="text"],
+
+input[type="number"],
+
+select,
+
+textarea {
+
+  width: 100%;
+
+  padding: 0.65rem;
+
+  border-radius: 8px;
+
+  border: none;
+
+  background: #1a1a1a;
+
+  color: #f1f1f1;
+
+  font-size: 0.95rem;
+
+  outline: none;
+
+  transition: border 0.2s ease;
+
+}
+
+ 
+
+input:focus,
+
+textarea:focus,
+
+select:focus {
+
+  border: 1px solid #00bfff;
+
+}
+
+ 
+
+/* Button */
+
+button[type="submit"] {
+
+  padding: 0.7rem 1.4rem;
+
+  border-radius: 8px;
+
+  border: none;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #06b6ff, #6a11cb);
+
+  color: #fff;
+
+  transition: opacity 0.2s ease;
+
+}
+
+ 
+
+button[type="submit"]:hover {
+
+  opacity: 0.9;
+
+}
+
+ 
+
+/* Section below form (preview list) */
+
+#newNftContainer {
+
+  margin-top: 2rem;
+
+}
+
+/* ============================
+
+   LIST PAGE PREVIEW CARDS
+
+   ============================ */
+
+ 
+
+/* Wrapper for each NFT card */
+
+#newNftContainer .card-wrapper {
+
+  flex: 1 1 280px;
+
+  margin: 1rem;
+
+  background: #111;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+ 
+
+#newNftContainer .card-wrapper:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+
+}
+
+ 
+
+/* Image styling */
+
+#newNftContainer .card-inner img {
+
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: contain;   /* full image visible */
+
+  background: #000;      /* fill space around transparent images */
+
+  padding: 8px;
+
+}
+
+ 
+
+/* Title */
+
+#newNftContainer .card-inner h3 {
+
+  font-size: 1.2rem;
+
+  color: #00bfff;
+
+  margin: 0.6rem 0;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Description */
+
+#newNftContainer .card-inner .desc {
+
+  font-size: 0.95rem;
+
+  color: #ccc;
+
+  margin: 0.5rem 1rem;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Price */
+
+#newNftContainer .card-inner .price {
+
+  font-weight: bold;
+
+  color: #fff;
+
+  margin: 0.5rem 0;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Action buttons */
+
+#newNftContainer .card-inner .actions {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0.8rem;
+
+}
+
+/* ============================
+
+   NFT CARD STYLE (List, Browse, Dashboard)
+
+   ============================ */
+
+ 
+
+/* Container grid */
+
+.nft-grid {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  justify-content: center;
+
+}
+
+ 
+
+/* Wrapper for each NFT card */
+
+.card-wrapper {
+
+  flex: 1 1 280px;
+
+  max-width: 280px;
+
+  background: #111;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+ 
+
+.card-wrapper:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+
+}
+
+ 
+
+/* Inner card content */
+
+.card-inner {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  padding-bottom: 1rem;
+
+}
+
+ 
+
+/* Image */
+
+.card-inner img {
+
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: contain; /* full image visible */
+
+  background: #000;
+
+  padding: 8px;
+
+  border-bottom: 1px solid #333;
+
+}
+
+ 
+
+/* Title */
+
+.card-inner h3 {
+
+  font-size: 1.2rem;
+
+  color: #00bfff;
+
+  margin: 0.6rem 0 0.3rem;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Description */
+
+.card-inner .desc {
+
+  font-size: 0.95rem;
+
+  color: #ccc;
+
+  margin: 0.3rem 1rem;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Price */
+
+.card-inner .price {
+
+  font-weight: bold;
+
+  color: #fff;
+
+  margin: 0.3rem 0;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Actions */
+
+.card-inner .actions {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0.6rem 0;
+
+}
+
+ 
+
+/* Buttons */
+
+.btn-primary {
+
+  padding: 0.4rem 0.8rem;
+
+  background: #00bfff;
+
+  color: #111;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+ 
+
+.btn-primary:hover {
+
+  background: #009fd4;
+
+}
+
+ 
+
+.btn-outline {
+
+  padding: 0.4rem 0.8rem;
+
+  background: transparent;
+
+  color: #00bfff;
+
+  border: 2px solid #00bfff;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+ 
+
+.btn-outline:hover {
+
+  background: #00bfff;
+
+  color: #111;
+
+}
+
+/* ============================
+
+   WALLET PAGE
+
+   ============================ */
+
+.wallet-box {
+
+  max-width: 500px;
+
+  margin: 2rem auto;
+
+  padding: 1.5rem;
+
+  background: #111;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+
+}
+
+ 
+
+.wallet-box p {
+
+  color: #ccc;
+
+  font-size: 1rem;
+
+  margin: 0.6rem 0;
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
